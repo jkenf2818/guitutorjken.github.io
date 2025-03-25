@@ -1,0 +1,2082 @@
+
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+body {
+    background-color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
+  
+    
+   
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.699);    
+    margin-top:30px ;
+    
+}
+
+
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+
+
+.logo a {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(201, 15, 15);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    border-bottom: 2px solid rgb(201, 15, 15);
+    color: rgb(201, 15, 15);
+    
+    
+
+   
+    
+    
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease-in-out;
+    padding-top: 20px;
+    
+    
+}
+
+.sidebar.open {
+    right: 0;
+    
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.sidebar a {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+   
+}
+
+.sidebar a:hover {
+    border-bottom: 2px solid rgb(201, 15, 15);
+    color: rgb(201, 15, 15);
+}
+
+
+.close-btn {
+    font-size: 24px;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+.menu-btn img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.6);
+}
+.athome{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 35px;   
+    margin-top: 770px;
+    padding: 0 10%;
+    font-family: "Bebas Neue", sans-serif;   
+    font-weight: 400;
+    
+   
+    
+    
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    
+   
+}
+
+
+.h1 {
+    font-size: 100px; 
+    font-weight: bold;
+    padding: 3%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10%;
+    
+}
+.about-us1{
+    background-image: url(rock\ star\ GIF\ by\ Volkan\ Aydemir.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 78vh 25vh;
+    
+    
+   
+}
+.p-about{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;   
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding: 0 10%;
+    font-family: "Bebas Neue", sans-serif;   
+    font-weight: 200;
+    
+
+}
+/*tools*/
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     margin: 2%;
+   
+    
+   
+}
+
+.container-card .tuner  {
+    background-color:rgb(22, 22, 22);
+    margin: 50px;
+   
+    border-radius: 25px;
+   
+
+}
+.tunerimg{
+    padding: 35px;
+}
+
+
+.container-card .chord  {
+    background-color: rgb(22, 22, 22);
+    border-radius: 20px;
+   
+    
+}
+
+.container-card :hover {
+    transform: scale(1.1);
+    transition: transform 0.8s;
+    background: rgba(201, 15, 15,0.4);
+    box-shadow: 0 8px 32px 0 rgba( 201, 15, 15, 0.1 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 150px;
+   
+     
+    
+
+}
+
+
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: rgb(248, 242, 242);
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 50px; 
+    font-weight: 400;
+    background-color:rgb(201, 15, 15);
+    border-radius: 500px;
+    border:1px;
+    
+   
+
+    
+}
+
+
+.tuner-chord{
+    margin-left: 900px;
+    margin-right: 900px;   
+    color: rgb(201, 15, 15);
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    
+    
+}
+.explanation p{
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+    
+}
+.un{
+    color: red;
+    margin-right: 5px;
+
+}
+/*buttonhome*/
+.homeB1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    
+    
+}
+.homeB{
+    font-size: 30px;
+    background-color: rgb(245, 3, 3);
+    color:#050505;
+    font-family: "Bebas Neue", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px; 
+}
+
+.homeB:hover{
+   background-color: red;
+   color: white;
+}
+/*slidehom*/
+.container1{
+    width: 110vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left:50%;
+    overflow:hidden ;
+    border: 20px ;   
+    border-radius: 50px;
+    box-shadow: 0 8px 32px 0 rgba( 201, 15, 15, 1 );
+    backdrop-filter: blur( 7px );
+   -webkit-backdrop-filter: blur( 7px );
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+   
+  
+}
+img{
+    width: 100%;
+}
+/*guitarlegendsa*/
+.container2{
+    margin: 100px 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;   
+    margin-left: 400px;
+    background-color:  rgb(22, 22, 22);
+    gap: 10px;
+    border-radius: 15px;
+   
+   
+}
+.container2 img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition:all ease-in-out 0.4s;
+    
+    
+   
+}
+.container2 img:hover{
+width: 100%;
+background: rgba(201, 15, 15, 1);
+box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 5);
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+/*footer*/
+footer{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.hr1{
+margin-top: 600px;
+}
+footer a{
+    text-decoration: underline;
+    color: #fff;
+    margin: 20px;
+    
+}
+footer a:hover{
+    color: red;
+}
+.plg{
+    color: #fff;
+    align-items: center;
+   
+    display: flex;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 150px;
+    
+}
+.jimih4{
+    color:#fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ margin-top: 150px;
+}
+.hrlg{
+margin-top: 100px;
+}
+.jimimg{
+    height: 200px;
+    width: 200px;
+   margin-left: 1175px;
+}
+.h3lg{
+    color:rgba( 201, 15, 15, 1 );
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 350px;
+}
+.lookd{
+    
+    height: 100px;
+    width: 100px;
+    margin-left: 1220px;
+}
+.fimg{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+}
+.homehr{
+    margin-top: 450px;
+}
+.tuner-chord1{
+    margin-left: 900px;
+    margin-right: 900px;   
+    color: rgb(201, 15, 15);
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50px;
+   margin-top: 50px;
+}
+
+.vidh{
+    margin: 50px;
+    margin-left: 50vh;
+    border: 1px solid red;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 5);
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+    
+    
+}
+.pvid{
+    color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:400px ;
+    margin-right:400px ;
+}
+.pvid a{
+   
+    color: rgb(221, 16, 16);
+}
+.tutorp{
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 129.4px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:470px ;
+    margin-right:400px ;
+    margin-top: 350px;
+    text-align: center;
+  
+}
+.tutorp1{
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:470px ;
+    margin-right:400px ;
+    margin-top: 250px;
+    text-align: center;
+  
+}
+
+
+.chordintro{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:470px ;
+    margin-right:400px ;
+    margin-top: 50px;
+    text-align: center;
+}
+.container3{
+    margin-top: 200px;
+}
+#tutor1{
+    margin-top: 100px;
+}
+.chordtypes{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:470px ;
+    margin-right:400px ;
+    margin-top: 50px;
+    text-align: center;
+}
+.h3lg1{
+    color:rgba( 201, 15, 15, 1 );
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    
+}
+
+.vidh1{
+    margin: 50px;
+    margin-left: 50vh;
+    border: 1px solid red;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 5);
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*2000px*/
+
+@media screen and (max-width: 2000px) {
+    .tuner-chord{
+        margin-left: 500px;
+        margin-right: 500px;   
+        color: rgb(201, 15, 15);
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 30px;
+        font-family: "Bebas Neue", sans-serif;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 50px;
+    }
+   
+    .tunerimg{
+        padding: 30px;
+    }
+    .container1{
+        width: 110vmin;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 49%;
+        left:50%;
+        overflow:hidden ;
+        border: 20px ;     
+        border-radius: 50px;
+       box-shadow: 10px 10px 10px rgb(201, 15, 15);
+    }
+    .athome{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 25px;   
+        margin-top: 720px;
+        padding: 0 10%;
+        font-family: "Bebas Neue", sans-serif;   
+        font-weight: 400;
+        
+       
+        
+        
+    }
+    .homeB{
+        font-size: 25px;
+        background-color: rgb(255, 0, 0);
+        color:#050505;
+        font-family: "Bebas Neue", sans-serif;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .about-us1{
+        background-image: url(rock\ star\ GIF\ by\ Volkan\ Aydemir.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 70vh 30vh;
+       
+         
+        
+        
+        
+       
+    }
+    .p-about{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 25px;   
+        margin-top: 25%;
+        margin-bottom: 10%;
+        padding: 0 10%;
+        font-family: "Bebas Neue", sans-serif;   
+        font-weight: 200;
+        
+    
+    }
+    .container2{
+        margin: 100px 0 0 200px;
+        width: 70%;
+        height: 400px;
+        display: flex;
+        justify-content: center;   
+        margin-left: 300px;
+        background-color:  rgb(22, 22, 22);
+        gap: 10px;
+        border-radius: 15px;
+        
+       
+    }
+    .container2 img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left: 60px;
+        transition: all ease-in-out 0.5s;
+        border:2px rgba( 255, 255, 255, 0.684 );
+        
+       
+    }
+    .container2 img:hover{
+    width: 100%;
+    background: rgba( 201, 15, 15, 1 );
+    box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 1);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 5px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .jimimg{
+        height: 200px;
+        width: 200px;
+       margin-left: 856px;
+    }
+    .lookd{
+   
+        height: 100px;
+        width: 100px;
+        margin-left: 910px;
+    }
+    .h3lg{
+        color: #fff;
+        color:#fff;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
+    .tuner-chord{
+        margin-left: 800px;
+        margin-right: 800px;   
+        color: rgb(201, 15, 15);
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 25px;
+        font-family: "Bebas Neue", sans-serif;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        
+        
+    }
+    .tools{
+        font-size: 40px;
+    }
+    .tuner-chord1{
+        margin-left: 800px;
+        margin-right: 800px;   
+        color: rgb(201, 15, 15);
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 30px;
+        font-family: "Bebas Neue", sans-serif;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 50px;
+       margin-top: 50px;
+    }
+    .homehr{
+        margin-top: 250px;
+    }
+    .vidh{
+        margin: 40px;
+        margin-left: 30vh;
+        
+        
+    }
+    .pvid{
+        color: #fff;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 30px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:400px ;
+        margin-right:400px ;
+        
+    }
+    .pvid a{
+       
+        color: rgb(221, 16, 16);
+    }
+    .tutorp{
+        
+        font-size: 85px;
+        
+        
+        margin-top: 150px;
+       
+      
+    }
+    .tutorp1{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 50px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        text-align: center;
+      
+    }
+    
+    
+    .chordintro{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 20px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .container3{
+        margin-top: 200px;
+    }
+    #tutor1{
+        margin-top: 100px;
+    }
+    .chordtypes{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 20px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .h3lg1{
+        color:rgba( 201, 15, 15, 1 );
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 300px;
+        
+    }
+    
+    .vidh1{
+       
+        margin-left: 30vh;
+       
+        
+        
+    }
+    
+    
+    
+    
+
+}
+
+
+/*1536*/
+
+@media screen and (max-width: 1536px) {
+    .nav-links li a {
+        margin-right: 10px;
+    }
+    .h1 {
+        font-size: 70px; 
+        font-weight: bold;
+        padding: 3%;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 30%;
+        
+    }
+    .tuner-chord{
+        margin-left: 500px;
+        margin-right: 500px;   
+        color: rgb(201, 15, 15);
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 20px;
+        font-family: "Bebas Neue", sans-serif;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 50px;
+    }    
+    .athome{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 20px;   
+        margin-top: 520px;
+        padding: 0 10%;
+        font-family: "Bebas Neue", sans-serif;   
+        font-weight: 400;
+        
+       
+        
+        
+    }
+    .homeB{
+        font-size: 20px;
+        background-color: rgb(255, 0, 0);
+        color:#050505;
+        font-family: "Bebas Neue", sans-serif;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .about-us1{
+      
+        background-position: center;
+        height: 80vh;
+        background-size: 400px;
+        
+        
+        
+       
+    }
+    .p-about{
+        
+        font-size: 20px;   
+        margin-top: 300px;
+        
+        
+    
+    }
+    .tuner-chord{   
+        color: rgb(201, 15, 15);
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 25px;
+        font-family: "Bebas Neue", sans-serif;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        
+        
+    }
+    .container2{
+        margin: 50px 0 0 200px;
+        width: 60%;
+        height: 300px;
+        display: flex;
+        justify-content: center;   
+        margin-left: 320px;
+        background-color:  rgb(22, 22, 22);
+        gap: 10px;
+        border-radius: 15px;
+        
+       
+    }
+    .container2 img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left: 60px;
+        transition: all ease-in-out 0.5s;
+        border:2px rgba( 255, 255, 255, 0.684 );
+        
+       
+    }
+   
+    .jimimg{
+        height: 150px;
+        width: 150px;
+       margin-left: 690px;
+    }
+    .lookd{
+        
+        height: 50px;
+        width: 50px;
+        margin-left: 740px;
+    }
+    .container1{
+        width: 140vmin;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 55%;
+        
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        animation: slide 16s infinite;
+    }
+    .h3lg{
+        font-size: 15px;
+        margin-top: 90px;
+    }
+    /*aboutus*/
+    .container-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+         margin: 2%;
+       
+        
+       
+    }
+    
+    .container-card .tuner  {    
+        height: 30vh;
+        width: 30vh;    
+    
+    }   
+    
+    
+    .container-card .chord  {
+        
+        height: 30vh;
+        width: 30vh;
+       
+        
+    }
+    .tutorp{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 50px;
+        font-family: "Bebas Neue", sans-serif;
+        
+        margin-top: 150px;
+       
+      
+    }
+    .tutorp1{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:400px ;
+        margin-right:400px ;
+        margin-top: 150px;
+        text-align: center;
+      
+    }
+    
+    
+    .chordintro{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 15px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        
+    }
+    .container3{
+        margin-top: 200px;
+    }
+    #tutor1{
+        margin-top: 20px;
+        margin-left: 550px;
+        font-size: 15px;
+    }
+    .chordtypes{
+       
+        font-size: 15px;
+        
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        
+    }
+    .h3lg1{
+        color:rgba( 201, 15, 15, 1 );
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 240px;
+        margin-left: 30px;
+        
+        
+    }
+    #look1{
+        margin-left: 760px;
+        height: 50px;
+        width: 50px;
+    }
+    .vidh1{
+        margin: 50px;
+        margin-left: 65vh;
+        height: 300px;
+        border: 1px solid red;
+        border-radius: 50px;
+        box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 5);
+      backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+        
+        
+    }
+   
+    
+   
+    
+    
+
+}
+/*1440p*/
+
+@media screen and (max-width: 1440px) {
+    
+    
+    .navbar {
+       
+        
+        z-index: 1000;
+        padding: 15px 100px;
+        display: flex;
+        align-items: center;
+       
+        
+    }
+    
+      
+    
+    .logo a {
+        font-size: 23px;
+       
+        
+    }
+      
+    .nav-links li a {
+        
+        font-size: 16px;
+       
+        
+        
+    }
+    .athome{
+        
+        font-size: 20px;   
+        margin-top: 675px;
+        
+          
+        
+        
+    }
+    .homehr{
+        margin-top: 100px;
+        margin-bottom: 5vh;
+    }
+    .tuner-chord1{
+        margin-left: 600px;
+        margin-right: 600px;   
+    }
+    .container1{
+        width: 150vmin;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 54%;
+        left:50%;
+        overflow:hidden ;
+        border: 20px ;   
+        border-radius: 50px;
+        box-shadow: 0 8px 32px 0 rgba( 201, 15, 15, 1 );
+        backdrop-filter: blur( 7px );
+       -webkit-backdrop-filter: blur( 7px );
+    }
+    .wrapper{
+       
+        height: 60vh;
+        display: flex;
+        animation: slide 16s infinite;
+    }
+    img{
+        width: 100%;
+        
+    }
+    .hr1{
+        margin-top: 0px;
+       
+    }
+    
+    .vidh{
+        height: 500px;
+
+        
+        
+    }
+    .pvid{
+        color: #fff;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 15px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:100px ;
+        margin-right:100px ;
+        margin-bottom: 20%;
+       
+       
+        
+    }
+    .pvid a{
+       
+        color: rgb(221, 16, 16);
+    }
+    .about-us1{
+        background-image: url(rock\ star\ GIF\ by\ Volkan\ Aydemir.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;
+        background-size: 300px;
+      
+    }
+    .p-about{
+        margin-bottom: 500px;
+        margin-top: 400px;
+    }
+    .explanation{
+        margin-bottom: 100px;
+        
+    }
+    .ab23{
+        margin-bottom: 20vh;
+    }
+    .container-card {
+        
+         height: 58vh;
+           
+    }
+    
+    .container-card .tuner  {
+        background-color:rgb(22, 22, 22);
+        margin: 50px;
+       
+        border-radius: 25px;
+       
+    
+    }
+    .tunerimg{
+        padding: 35px;
+    }
+    
+    
+    .container-card .chord  {
+        background-color: rgb(22, 22, 22);
+        border-radius: 20px;
+       
+        
+    }
+   
+    .container2{
+        margin: 50px 0 0 200px;
+        width: 70%;
+        height: 400px;
+        display: flex;
+        justify-content: center;   
+        margin-left: 200px;
+        background-color:  rgb(22, 22, 22);
+        gap: 10px;
+        border-radius: 15px;
+        
+       
+    }
+    
+    .jimimg{
+        height: 150px;
+        width: 150px;
+       margin-left: 650px;
+    }
+    .lookd{
+        
+        height: 90px;
+        width: 90px;
+        margin-left: 100px;
+    }
+    .plg{
+        color: #fff;
+        align-items: center;
+        display: flex;
+        font-size: 18px;
+        font-family: "Bebas Neue", sans-serif;
+        margin: 100px;
+        
+    }
+    .h3lg{
+        color:rgba( 201, 15, 15, 1 );
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    .lookd{
+        
+        height: 60px;
+        width: 60px;
+        margin-left: 690px;
+    }
+    .tutorp{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 50px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:440px ;
+        margin-right:400px ;
+        margin-top: 200px;
+       
+      
+    }
+    .tutorp1{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:400px ;
+        margin-right:400px ;
+        margin-top: 150px;
+        text-align: center;
+      
+    }
+    
+    
+    .chordintro{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 15px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        
+    }
+    .container3{
+        margin-top: 200px;
+    }
+    #tutor1{
+        margin-top: 20px;
+        margin-left: 550px;
+        font-size: 15px;
+    }
+    .chordtypes{
+       
+        font-size: 15px;
+        
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        
+    }
+    #look1{
+        margin-left: 710px;
+        height: 50px;
+        width: 50px;
+    }
+    .vidh1{
+        margin: 50px;
+        margin-left: 50vh;
+        height: 300px;
+        border: 1px solid red;
+        border-radius: 50px;
+        box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 5);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+        
+        
+    }
+    .h3lg1{
+    margin-top: 250px;
+    }
+   
+    
+    
+    
+
+    
+    
+}
+/*1366p*/
+
+@media screen and (max-width: 1366px) {
+    
+    .athome{
+        
+        font-size: 20px;   
+        margin-top:540px;
+        
+          
+        
+        
+    }
+    .homehr{
+        margin-top: 100px;
+        margin-bottom: 5vh;
+    }
+    .tuner-chord1{
+        margin-left: 600px;
+        margin-right: 600px;   
+    }
+    .container1{
+        width: 120vmin;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 54%;
+        left:50%;
+        overflow:hidden ;
+        border: 20px ;   
+        border-radius: 50px;
+        box-shadow: 0 8px 32px 0 rgba( 201, 15, 15, 1 );
+        backdrop-filter: blur( 7px );
+       -webkit-backdrop-filter: blur( 7px );
+    }
+    .wrapper{
+       
+        height: 50vh;
+        display: flex;
+        animation: slide 16s infinite;
+    }
+    img{
+        width: 100%;
+        
+    }
+    .hr1{
+        margin-top: 0px;
+       
+    }
+    
+    .vidh{
+        height: 500px;
+
+        
+        
+    }
+    .pvid{
+        color: #fff;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 15px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:100px ;
+        margin-right:100px ;
+        margin-bottom: 20%;
+       
+       
+        
+    }
+    .pvid a{
+       
+        color: rgb(221, 16, 16);
+    }
+    .about-us1{
+        background-image: url(rock\ star\ GIF\ by\ Volkan\ Aydemir.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;
+        background-size: 300px;
+      
+    }
+    .p-about{
+        margin-bottom: 500px;
+        margin-top: 400px;
+    }
+    .explanation{
+        margin-bottom: 100px;
+        
+    }
+    .ab23{
+        margin-bottom: 20vh;
+    }
+    .container-card {
+        
+         height: 48vh;
+           
+    }
+    
+    .container-card .tuner  {
+       
+        margin: 50px;
+       
+        border-radius: 25px;
+       
+    
+    }
+    .tunerimg{
+        padding: 35px;
+    }
+    
+    
+    .container-card .chord  {
+      
+        border-radius: 20px;
+       
+        
+    }
+   
+    .container2{
+        margin: 50px 0 0 200px;
+        width: 70%;
+        height: 350px;
+        display: flex;
+        justify-content: center;   
+        margin-left: 200px;
+        background-color:  rgb(22, 22, 22);
+        gap: 10px;
+        border-radius: 15px;
+        
+       
+    }
+    
+    .jimimg{
+        height: 150px;
+        width: 150px;
+       margin-left:610px;
+    }
+    
+    .plg{
+        color: #fff;
+        align-items: center;
+        display: flex;
+        font-size: 18px;
+        font-family: "Bebas Neue", sans-serif;
+        margin: 100px;
+        
+    }
+    .h3lg{
+        color:rgba( 201, 15, 15, 1 );
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .lookd{
+        
+        height: 60px;
+        width: 60px;
+        margin-left: 655px;
+    }
+    .tutorp{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 50px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:440px ;
+        margin-right:400px ;
+        margin-top: 200px;
+       
+      
+    }
+    .tutorp1{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:400px ;
+        margin-right:400px ;
+        margin-top: 150px;
+        text-align: center;
+      
+    }
+    
+    
+    .chordintro{
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 15px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        
+    }
+    .container3{
+        margin-top: 200px;
+    }
+    #tutor1{
+        margin-top: 20px;
+        margin-left: 550px;
+        font-size: 15px;
+    }
+    .chordtypes{
+       
+        font-size: 15px;
+        
+        margin-left:470px ;
+        margin-right:400px ;
+        margin-top: 50px;
+        
+    }
+    #look1{
+        margin-left: 673px;
+        height: 50px;
+        width: 50px;
+    }
+    .vidh1{
+        margin: 50px;
+        margin-left: 52vh;
+        height: 320px;
+        border: 1px solid red;
+        border-radius: 50px;
+        box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 5);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+        
+        
+    }
+    .h3lg1{
+    margin-top: 130px;
+    }
+   
+
+}
+/*768p*/
+@media screen and (max-width: 768px){
+   .Hide{
+         display: none;
+   }
+
+}
+/*640p*/
+@media screen and (max-width: 640px){
+
+}
+/*475p*/
+@media screen and (max-width: 475px) {
+    .navbar {
+        background-color: rgb(22, 22, 22);
+        height: 7vh;
+        margin: 0;
+        
+        padding: 0 10px;
+    }
+   
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+    .logo a {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(201, 15, 15);
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 49px;
+        text-decoration: none;
+        
+        
+        
+    }
+    .sidebar a {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    .slideContainer {
+        height: 30vh;
+        width: 100vw; 
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        border: 1px solid rgb(250, 1, 1);
+        border-radius: 8px;
+        box-shadow: 10px 25px 30px rgba(255, 0, 0, 0.3);
+        
+        
+    }
+    .h1 {
+        font-size: 20px; 
+        font-weight: bold;
+        padding: 3%;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 120%;
+        
+    }
+    button {
+        font-size: 10px;
+        padding: 0.6em 1.3em; 
+        
+    }
+    .container2{
+        margin: 100px 0 0 200px;
+        width: 70%;
+        height: 200px;
+        display: flex;
+        justify-content: center;   
+        margin-left: 5px;
+        margin-right: 20px;
+        background-color:  rgb(22, 22, 22);
+        gap: 10px;
+        border-radius: 15px;
+        
+       
+    }
+    .container2 img{
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left: 60px;
+        transition: all ease-in-out 0.5s;
+        border:2px rgba( 255, 255, 255, 0.684 );
+        
+       
+    }
+    .container2 img:hover{
+    width: 10%;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 5px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .tools {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: rgb(248, 242, 242);
+        font-family: "Bebas Neue", sans-serif; 
+        font-size: 20px; 
+        font-weight: 400;
+        background-color:rgb(201, 15, 15);
+        border-radius: 500px;
+        border:1px;
+        
+       
+    
+        
+    }
+    .logo a {
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(201, 15, 15);
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0%;
+        
+    }
+    .athome{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 10px;   
+        margin-top: 340px;
+        padding: 0 10%;
+        font-family: "Bebas Neue", sans-serif;   
+        font-weight: 400;
+        
+       
+        
+        
+    }
+    .homeB{
+        font-size: 5px;
+        background-color: rgb(255, 0, 0);
+        color:#050505;
+        font-family: "Bebas Neue", sans-serif;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .container1{
+        width: 110vmin;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left:50%;
+        overflow:hidden ;
+        border: 20px ;   
+        border-radius: 50px;
+       box-shadow: 10px 10px 10px rgb(201, 15, 15);
+    }
+    .wrapper{
+        height: 30vh;
+        width: 55vh;
+        display: flex;
+        animation: slide 16s infinite;
+    }
+    
+    .about-us1{
+        background-image: url(rock\ star\ GIF\ by\ Volkan\ Aydemir.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 60vh;
+        background-size: 200px;
+      
+        
+        
+       
+    }
+    .p-about{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 9px;   
+        margin-top: 60%;
+        margin-bottom: 10%;
+        padding: 0 10%;
+        font-family: "Bebas Neue", sans-serif;   
+        font-weight: 200;
+        
+    }
+    
+    .container1{
+        width: 110vmin;
+        top: 40%;    
+        
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        animation: slide 16s infinite;
+    }
+   .athome{
+    margin: 450px 0 0px;
+}
+.homeB{
+    margin-bottom: 200px;
+}
+.footer{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.fimg{
+    width: 20px;
+    height: 20px;
+}
+.hr1{
+    font-size: 20px;
+    margin-top: 134px;
+}
+  .ftools{
+    margin-top:500px;
+  }
+  
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: rgb(248, 242, 242);
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 15px; 
+    font-weight: 400;
+    background-color:rgb(201, 15, 15);
+    border-radius: 500px;
+    border:1px;
+    
+   
+
+    
+}
+
+
+.tuner-chord{
+    margin-left: 150px;
+    margin-right: 150px;   
+    font-size: 30px;   
+    margin-top: 60px; 
+}
+
+.container-card{
+    margin-top: 0;
+}
+
+
+.container-card .tuner  {
+    background-color:  rgb(22, 22, 22);
+    margin: 20px;
+    height: 135px;
+    width: 135px;
+    border-radius: 25px;
+    margin-left: 1px;
+   
+   
+
+}
+
+.container-card .chord  {
+    background-color:  rgb(22, 22, 22);
+    border-radius: 20px;
+    height: 135px;
+    width: 135px;
+     
+    
+}
+.tuner-chord{
+    font-size: 10px;
+    border: 1px solid rgb(255, 255, 255);
+   
+
+} 
+.explanation p{
+    text-align:justify;
+    font-size: 5px;
+    
+    
+}
+.tutorp{
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:70px ;
+    margin-right:70px ;
+    margin-top: 150px;
+    text-align: center;
+  
+}
+#look1{
+    margin-left: 185px;
+}
+
+.chordintro{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:70px ;
+    margin-right:70px ;
+    margin-top: 10px;
+    text-align: center;
+}
+.container3{
+    margin-top: 200px;
+}
+#tutor1{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 10px;
+}
+
+.chordtypes{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left:70px ;
+    margin-right:70px ;
+    margin-top: 10px;
+    text-align: center;
+}
+.h3lg1{
+    color:rgba( 201, 15, 15, 1 );
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10px;
+  
+    margin-top: 290px;
+    
+}
+#look1{
+    margin-left: 190px;
+    height:35px ;
+    width:35px;
+}
+
+.vidh1{
+    margin: 10px;
+    margin-left: 6vh;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(201, 15, 15, 5);
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+height: 190px;
+width: 300px;
+    
+    
+}
+.tuner-chord{
+    margin-top: 150px;
+}
+.container2{
+    margin: 100px;
+    width: 20%;
+    height: 160px;
+    display: flex;
+    justify-content: center;   
+    margin-left: 110px;
+    background-color:  rgb(22, 22, 22);
+    gap: 10px;
+    border-radius: 15px;
+    
+    
+   
+}
+
+.jimimg{
+    height: 90px;
+    width: 90px;
+   margin-left: 150px;
+}
+.lookd{
+    
+  display: none;
+}
+.plg{
+    color: #fff;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 100px;
+    
+}
+.h3lg{
+    display: none;
+}
+.jimih4{
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.hrlg{
+    margin-top: 500px;}
+
+   
+   
+   
+    
+}
+
